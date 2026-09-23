@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f0e6;
+  --foreground: #12192b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-oswald);
+
+  /* Dense type scale for scores/odds/stats */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+
+  /* Brand orange — logo, CTAs, active states, footer */
+  --color-brand-50: #fff3e8;
+  --color-brand-100: #ffe3c7;
+  --color-brand-200: #ffc890;
+  --color-brand-300: #ffa657;
+  --color-brand-400: #fa8628;
+  --color-brand-500: #f2760c;
+  --color-brand-600: #e05f04;
+  --color-brand-700: #b94805;
+  --color-brand-800: #93390c;
+  --color-brand-900: #78300e;
+
+  /* Navy — header dark elements, promo cards, primary text */
+  --color-navy-50: #eef1f7;
+  --color-navy-100: #d6dce9;
+  --color-navy-200: #adb9d2;
+  --color-navy-300: #7d8db3;
+  --color-navy-400: #505f8a;
+  --color-navy-500: #333f66;
+  --color-navy-600: #232c4d;
+  --color-navy-700: #1a2140;
+  --color-navy-800: #141a33;
+  --color-navy-900: #10182b;
+  --color-navy-950: #0a0f1d;
+
+  /* Cream — page background */
+  --color-cream-50: #fdfbf7;
+  --color-cream-100: #f5f0e6;
+  --color-cream-200: #ece3d2;
+  --color-cream-300: #ded1b5;
+
+  /* Live / positive states */
+  --color-live-50: #e9f9ee;
+  --color-live-500: #1fa855;
+  --color-live-600: #178a44;
+
+  /* Mid-range rating / odds highlight */
+  --color-amber-400: #f2a93b;
+  --color-amber-500: #e6941a;
+
+  /* Muted gray — secondary text (timestamps, positions, labels) */
+  --color-muted-400: #9599a6;
+  --color-muted-500: #767b8a;
+  --color-muted-600: #5b6072;
+
+  /* Card surface, border, shadow, radius — kept tight and consistent */
+  --color-surface: #ffffff;
+  --color-card-border: #e7e1d4;
+  --shadow-card: 0 1px 2px 0 rgb(18 25 43 / 0.05), 0 1px 3px 0 rgb(18 25 43 / 0.06);
+  --radius-card: 0.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
