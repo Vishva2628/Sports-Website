@@ -42,6 +42,9 @@ function RankingCard({ list }: { list: RankingList }) {
       <div className="px-4 py-2.5">
         <h2 className="text-sm font-bold text-navy-900">{list.title}</h2>
         <p className="text-2xs text-muted-500">{list.updated}</p>
+        <p className="text-2xs text-muted-400">
+          Preview data — not provided by our current API stack
+        </p>
       </div>
       <div className="border-t border-card-border">
         {list.entries.map((entry) => (

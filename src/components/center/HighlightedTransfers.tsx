@@ -31,6 +31,10 @@ export function HighlightedTransfers() {
         <h2 className="text-sm font-bold text-navy-900">
           Highlighted Transfers
         </h2>
+        <p className="text-2xs text-muted-500">
+          Preview data — transfer data isn&apos;t available from api-football,
+          api-basketball, or cricapi.
+        </p>
       </div>
       <div className="border-t border-card-border">
         {TRANSFERS.map((t) => {
